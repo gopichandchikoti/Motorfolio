@@ -1,0 +1,341 @@
+.vehicle-hero {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  background: #e8eee3;
+  border: 1px solid #dde5d7;
+  border-radius: 9px;
+  overflow: hidden;
+  min-height: 221px;
+  color: #304933;
+}
+.vehicle-copy {
+  padding: 26px 30px;
+}
+.hero-label {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  font-size: 8px;
+  letter-spacing: 1.8px;
+  font-weight: 650;
+  color: #4f634d;
+}
+.vehicle-selector {
+  background: transparent;
+  border: 0;
+  font-family: 'Instrument Serif', serif;
+  font-size: 30px;
+  padding: 0;
+  margin: 13px 0 2px;
+  height: 43px;
+  max-width: 360px;
+  color: #304933;
+}
+.vehicle-selector option {
+  font-family: 'DM Sans Variable', sans-serif;
+  font-size: 14px;
+  background: #fff;
+  color: #263d33;
+}
+.vehicle-copy > p {
+  font-size: 11px;
+  color: #516249;
+}
+.hero-divider {
+  display: inline-block;
+  margin: 0 10px;
+  color: #a1ad98;
+}
+.vehicle-meta {
+  margin-top: 26px;
+  display: flex;
+  align-items: flex-end;
+  gap: 42px;
+}
+.vehicle-meta small {
+  font-size: 8px;
+  letter-spacing: 1.2px;
+  display: block;
+  margin-bottom: 7px;
+  color: #526548;
+}
+.vehicle-meta strong {
+  font-size: 20px;
+  font-weight: 550;
+  letter-spacing: -0.5px;
+}
+.vehicle-meta strong span {
+  font-size: 11px;
+  color: #516249;
+  font-weight: 400;
+}
+.hero-link {
+  padding: 10px 0;
+  background: none;
+  border: 0;
+  border-bottom: 1px solid #bdcbb5;
+  font-size: 10px;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  min-height: 44px;
+}
+.vehicle-image {
+  position: relative;
+  display: grid;
+  place-items: center;
+  padding: 18px 10px 22px;
+  background: linear-gradient(115deg, transparent, #cfdcc54d);
+}
+.car-art {
+  width: 100%;
+  max-width: 450px;
+  display: block;
+}
+.vehicle-image img {
+  width: 100%;
+  max-height: 190px;
+  object-fit: contain;
+}
+.illustration-label {
+  position: absolute;
+  bottom: 13px;
+  right: 22px;
+  font-size: 8px;
+  color: #64745e;
+  letter-spacing: 0.5px;
+}
+.schedule-list {
+  display: flex;
+  flex-direction: column;
+}
+.schedule-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 15px 0;
+  border-bottom: 1px solid var(--line);
+}
+.schedule-icon {
+  display: grid;
+  place-items: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: var(--accent-soft);
+  color: var(--accent);
+}
+.schedule-item strong {
+  font-size: 11px;
+  font-weight: 550;
+}
+.schedule-item p {
+  font-size: 9px;
+  color: var(--muted);
+  margin: 6px 0 8px;
+}
+.add-schedule {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 7px;
+  background: none;
+  border: 0;
+  color: var(--accent);
+  font-size: 10px;
+  min-height: 44px;
+  margin-top: 10px;
+}
+.welcome-garage {
+  background: #e8eee3;
+  border: 1px solid #dce5d5;
+  border-radius: 9px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 45px 35px;
+  align-items: center;
+  color: #304933;
+  min-height: 320px;
+}
+.welcome-garage h2 {
+  font-family: 'Instrument Serif', serif;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 1.25;
+  letter-spacing: -0.7px;
+}
+.welcome-garage p {
+  font-size: 12px;
+  line-height: 1.8;
+  max-width: 330px;
+  margin: 17px 0 25px;
+  color: #64715f;
+}
+.demo-invitation {
+  padding: 24px 5px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-size: 11px;
+  color: var(--muted);
+}
+.demo-invitation button {
+  border: 0;
+  background: none;
+}
+.garage-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+.garage-card h2 {
+  font-size: 19px;
+  font-weight: 550;
+}
+.garage-card > p {
+  font-size: 12px;
+  color: var(--muted);
+  margin: 12px 0 25px;
+}
+.garage-card > .car-art {
+  margin: 0 auto 20px;
+  max-height: 180px;
+  background: var(--accent-soft);
+  border-radius: 6px;
+}
+.garage-photo {
+  width: 100%;
+  height: 180px;
+  object-fit: contain;
+}
+.maintenance-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  border-bottom: 1px solid var(--line);
+  padding: 22px 0;
+}
+.maintenance-row h3 {
+  font-size: 15px;
+  margin: 10px 0;
+}
+.maintenance-row p {
+  font-size: 11px;
+  color: var(--muted);
+  line-height: 1.8;
+}
+.maintenance-row small {
+  font-size: 10px;
+  color: var(--muted);
+  display: block;
+  margin-top: 8px;
+}
+.search-field {
+  position: relative;
+  flex: 1;
+  min-width: 200px;
+}
+.search-field svg {
+  position: absolute;
+  left: 13px;
+  top: 14px;
+  color: var(--muted);
+}
+.search-field input {
+  padding-left: 38px;
+  width: 100%;
+  max-width: none;
+}
+.toolbar select {
+  max-width: 170px;
+}
+.date-filter label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 10px;
+}
+.date-filter input {
+  width: 155px;
+  min-width: 0;
+}
+.receipt-link {
+  border: 0;
+  background: none;
+  font-size: 9px;
+  min-height: 44px;
+  padding: 0;
+}
+@media (max-width: 900px) {
+  .vehicle-meta {
+    gap: 20px;
+  }
+  .vehicle-selector {
+    font-size: 27px;
+  }
+  .vehicle-copy {
+    padding: 24px;
+  }
+  .garage-grid {
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 600px) {
+  .vehicle-hero {
+    grid-template-columns: 1fr;
+  }
+  .vehicle-image {
+    min-height: 120px;
+    padding: 0 25px 20px;
+  }
+  .vehicle-image .car-art {
+    max-height: 150px;
+  }
+  .vehicle-copy {
+    padding: 23px;
+  }
+  .vehicle-selector {
+    font-size: 29px;
+  }
+  .vehicle-meta {
+    justify-content: space-between;
+    margin-top: 22px;
+  }
+  .welcome-garage {
+    grid-template-columns: 1fr;
+    padding: 28px 24px;
+  }
+  .welcome-garage h2 {
+    font-size: 34px;
+  }
+  .welcome-garage > .car-art {
+    max-height: 150px;
+  }
+  .demo-invitation {
+    flex-direction: column;
+    gap: 5px;
+  }
+  .maintenance-row {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .date-filter label {
+    flex-basis: 100%;
+  }
+  .date-filter input {
+    width: auto;
+    flex: 1;
+  }
+  .toolbar select {
+    max-width: none;
+  }
+  .garage-grid {
+    gap: 18px;
+  }
+  .welcome-garage > div > .eyebrow {
+    display: block;
+    margin-bottom: 17px;
+  }
+}

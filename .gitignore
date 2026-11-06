@@ -1,0 +1,14 @@
+node_modules/
+dist/
+coverage/
+artifacts/
+qa/
+*.log
+.env
+android/.gradle/
+android/local.properties
+android/**/build/
+*.keystore
+*.jks
+
+.local-server.json
