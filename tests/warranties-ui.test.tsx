@@ -53,7 +53,13 @@ describe('warranty ownership workflow', () => {
     await screen.findByText('No coverage records here yet');
     await user.selectOptions(screen.getByLabelText('Filter warranty vehicle'), 'all');
     await user.click(screen.getByRole('button', { name: 'Edit warranty Battery warranty' }));
-    fireEvent.change(screen.getByLabelText('Coverage ends (optional)'), { target: { value: '2026-11-10' } });
+    // End the coverage 10 days from today so the UI genuinely renders "Expiring soon";
+    // the old fixed date (2026-11-10) has passed, which made the warranty "Expired".
+    const expiringSoon = new Date();
+    expiringSoon.setDate(expiringSoon.getDate() + 10);
+    fireEvent.change(screen.getByLabelText('Coverage ends (optional)'), {
+      target: { value: expiringSoon.toLocaleDateString('en-CA') },
+    });
     await user.click(screen.getByRole('button', { name: 'Save record' }));
     await screen.findByText('Expiring soon');
     await user.click(screen.getByRole('button', { name: 'Delete warranty Battery warranty' }));
