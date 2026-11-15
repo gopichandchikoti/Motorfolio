@@ -5,6 +5,7 @@ Motorfolio keeps your vehicle ownership history in one private place: fuel, main
 **Local app:** [http://127.0.0.1:5181](http://127.0.0.1:5181)  
 **Android:** `com.portfolio.motorfolio`, version **1.0.0 (1)**  
 **Developer guide:** [Architecture, flowcharts, verification, and release](docs/ARCHITECTURE.md)
+**Live demo:** https://motorfolio.vercel.app
 
 ## Features
 
